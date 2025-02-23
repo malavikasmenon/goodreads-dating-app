@@ -5,13 +5,13 @@ import Login from './pages/Login';
 import ProfileSwipe from './pages/ProfileSwipe';
 import Matches from './pages/Matches';
 import { AuthProvider } from './context/AuthContext';
+import './index.css'
 
 function App() {
   return (
     <AuthProvider>
       <Router>
-        <div className="min-h-screen bg-gray-100">
-          <h1>Hello</h1>
+        <div className="app min-h-screen bg-gray-100">
           <Routes>
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />

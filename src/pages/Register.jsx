@@ -95,6 +95,7 @@ export default function Register() {
               />
             </div>
             <div>
+              <label>DOB: </label>
               <input
                 type="date"
                 name="date_of_birth"
@@ -121,7 +122,7 @@ export default function Register() {
                 <option value="other">Other</option>
               </select>
             </div>
-            <p>Looking for</p>
+            <h2>Who are you looking for?</h2>
             <div>
               <select
                 name="looking_for"
@@ -135,7 +136,7 @@ export default function Register() {
                 <option value="female">Female</option>
                 <option value="non-binary">Non Binary</option>
                 <option value="prefer-not-to-say">Prefer Not To Say</option>
-                <option value="other">Other</option>
+                <option value="any">Any</option>
               </select>
             </div>
             <div>
@@ -144,7 +145,7 @@ export default function Register() {
                 name="min_age_preference"
                 required
                 className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                placeholder="Looking for someone aged above"
+                placeholder="Someone aged above"
                 value={formData.min_age_preference}
                 onChange={handleChange}
               />
@@ -155,7 +156,7 @@ export default function Register() {
                 name="max_age_preference"
                 required
                 className="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                placeholder="Looking for someone aged below"
+                placeholder="Someone aged below"
                 value={formData.max_age_preference}
                 onChange={handleChange}
               />
@@ -165,7 +166,7 @@ export default function Register() {
           <div>
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="button group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Register
             </button>
