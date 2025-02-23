@@ -1,4 +1,4 @@
-# Bookworm Dating App
+# goodreads Dating App
 
 A dating app for book lovers! Connect with people who share your literary interests.
 
